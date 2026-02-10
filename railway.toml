@@ -1,0 +1,7 @@
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+startCommand = "cd backend && gunicorn hrms.wsgi:application --bind 0.0.0.0:$PORT"
+healthcheckPath = "/api/employees/"
+healthcheckTimeout = 100
