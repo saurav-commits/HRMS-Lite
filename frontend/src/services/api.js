@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Ensure the API base URL includes /api
-const API_BASE_URL = 'http://localhost:8000/api';
+const API_BASE_URL = 'https://hrms-lite.up.railway.app/api';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
